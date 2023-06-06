@@ -1,0 +1,39 @@
+@media(max-width: 992px){
+    .form-section{
+        width: 80%;
+    }
+
+    .form-input div{
+        width: 47%;
+    }
+}
+
+@media(max-width: 605px){
+    .main_box{
+        height: 850px;
+    }
+
+    .form_details{
+        width: 90%;
+    }
+
+    form{
+        padding: 0 10px;
+    }
+
+    .form-section{
+        width: 90%;
+    }
+
+    .form-section label{
+        font-size: 0.9rem;
+    }
+
+    .form-input div{
+        width: 100%;
+    }
+
+    input[type="text"], select {
+        font-size: 1rem;
+    }
+}

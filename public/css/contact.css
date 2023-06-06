@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 140%;
+}
+#contact {
+    /* border: 2px solid red; */
+    height: 100%;
+    /* position: relative; */
+
+}
+#contact h1{
+    font-size: 2.1rem;
+    text-align: center;
+    padding: 5px;
+    font-weight: bolder;
+    padding: 30px;
+}
+ 
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.contact_symbol{
+    /* border: 2px green solid; */
+    /* width: 50%; */
+    height: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+.contact_symbol .symbol{
+    /* border: 2px black solid; */
+    height: 250px;
+    min-width: 330px;
+    margin: 20px 20px;
+}
+.contact_symbol .symbol i{
+    display: block;
+    margin: auto;
+    /* text-align: center; */
+    font-size: 50px;
+    padding: 10px;
+    color: blue;
+}
+.contact_symbol .symbol h3{
+    /* text-align: center; */
+    color: blue;
+    padding: 10px;
+}
+
+.contact_form{
+    /* border: 2px yellow solid; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+    /* position: absolute; */
+
+}
+input{
+    margin: 10px 5px;
+    padding: 10px;
+    font-size: large;
+    width: 90%;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(252, 250, 250);
+}
+button{
+    padding: 10px;
+    width: 140px;
+    /* height: 10px; */
+    margin: 30px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}

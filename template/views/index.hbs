@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+
+    <style>
+       #get-location{
+        cursor: pointer;
+       }
+       #about_button a{
+        cursor: pointer;
+       }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+
+    <section id="introView">
+        <div class="side_scrolling_container">
+            <!-- <div id="introImg"></div> -->
+            <img src="assets/images/plomber-removebg-preview.png" class="introImg" alt="">
+            <!-- <div id="introImg"></div> -->
+            <img src="assets/images/travel-removebg-preview.png" class="introImg" alt="">
+        </div>
+        <div class="intro">
+            <h1 class="brandStyling">Welcome to&nbsp;
+                <span>S</span>
+                <span>u</span>
+                <span>v</span>
+                <span>i</span>
+                <span>d</span>
+                <span>h</span>
+                <span>a</span>
+            </h1>
+            <div id="searchInput">
+                <div class="location">
+                    <img src="assets/icons/location.png" alt="">
+                    <div class="text">
+                        <span><div id="location-details">Current</div></span>
+                        <span><button id="get-location" >Location</button></span>
+                    </div>
+                    <img src="assets/icons/down-arrow.png" alt="">
+                </div>
+                <input type="text" name="search" class="search" id="search_items" placeholder="Search" onkeyup="search()">
+
+                <button> <img src="assets/icons/search.png" class="searchButton" alt=""> </button>
+            </div>
+            <div class="services">
+                We are here to provide you every solution, like a rainbow in your life.
+                <span>Know more about us <button> Know More</button></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="statusSection">
+        <div class="totalStatus">
+            <div class="status1">
+                <h1>18</h1>
+                <span style="line-height: 20px; color: rgb(70, 68, 68);">Total No. of <br> <span
+                        style="font-size: 1.3rem; color:rgb(34, 33, 33)">Services</span></span>
+            </div>
+        </div>
+
+        <div class="no_of_status">
+            <div class="status2">
+                <h2>7</h2>
+                <span>Traveling</span>
+            </div>
+            <div class="status3">
+                <h2>6</h2>
+                <span>Domestic</span>
+            </div>
+            <div class="status4">
+                <h2>3</h2>
+                <span>Teaching</span>
+            </div>
+            <div class="status5">
+                <h2>2</h2>
+                <span>Others</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="categorySection">
+        <div class="title">
+            <h2>All Services</h2>
+        </div>
+        <button id="leftBtn" class="lowBrightness">
+            <img src="assets/icons/leftBtn.png" alt="">
+        </button>
+        <div id="categoryContainer" item-display-d="7" item-display-t="4" item-display-m="2">
+            <div class="slider-width">
+                <a href="/domestic/carpenter" class="catSimiler cat1"></a>
+                <a href="/domestic/ac_request" class="catSimiler cat2"></a>
+                <a href="/domestic/const_worker" class="catSimiler cat3"></a>
+                <a href="/domestic/electrician" class="catSimiler cat4"></a>
+                <a href="/domestic/fridge" class="catSimiler cat5"></a>
+                <a href="/domestic/gas_stove" class="catSimiler cat6"></a>
+                <a href="/domestic/laundary" class="catSimiler cat7"></a>
+                <a href="/domestic/packet_mover" class="catSimiler cat8"></a>
+                <a href="/professional/photographer" class="catSimiler cat9"></a>
+                <a href="/domestic/plumber" class="catSimiler cat10"></a>
+                <a href="/domestic/washing_machine" class="catSimiler cat11"></a>
+                <a href="/education/compatative.html" class="catSimiler cat12"></a>
+                <a href="/education/dance_teacher.html" class="catSimiler cat13"></a>
+                <a href="/education/home_tuition.html" class="catSimiler cat14"></a>
+                <a href="/professional/soft_deve" class="catSimiler cat15"></a>
+                <a href="/health/doctor" class="catSimiler cat16"></a>
+                <a href="/professional/app_deve" class="catSimiler cat17"></a>
+                <a href="/professional/graphic_designer" class="catSimiler cat18"></a>
+            </div>
+        </div>
+        <button id="rightBtn">
+            <img src="assets/icons/leftBtn.png" alt="">
+        </button>
+    </section>
+
+    <section id="tempalateBikeSection">
+        <a href="" class="trustContainer">
+            <div class="detailText">
+                <h1>Do you find difficulty to buy second hand bikes?</h1>
+                <div class="legalInfo">
+                    <div class="trusted">
+                        <span class="material-symbols-outlined">
+                            partner_exchange
+                        </span>
+                        <h2>Trusted</h2>
+                    </div>
+                    <div class="trusted">
+                        <span class="material-symbols-outlined">
+                            verified
+                        </span>
+                        <h2>Verified</h2>
+                    </div>
+                    <div class="trusted">
+                        <span class="material-symbols-outlined">
+                            currency_rupee
+                        </span>
+                        <h2>Low-priced</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="viewImage">
+                <img src="/assets/images/bike_selling-removebg-preview.png" alt="">
+            </div>
+        </a>
+    </section>
+
+    <section id="homeSection">
+        <div class="title" id="transport">
+            <h2>Traveling & Transport</h2>
+        </div>
+        <!-- <button class="homeLeftBtn homeLeftBtn1">
+            <img src="assets/icons/leftBtn.png" alt="">
+        </button> -->
+        <div class="homeContainer homeContainer1" item-display-d="4" item-display-t="2" item-display-m="1">
+            <div class="homeSlider-width">
+                <a href="#" class="homeCatSimiler cat1">
+                    <h3>Car Selling</h3>
+                </a>
+                <a href="#" class="homeCatSimiler cat2">
+                    <h3>Car Buying</h3>
+                </a>
+                <a href="transport/car_rent" class="homeCatSimiler cat3">
+                    <h3>Car Rent</h3>
+                </a>
+                <a href="" class="homeCatSimiler cat4">
+                    <h3>Driver</h3>
+                </a>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!-- <button class="homeRightBtn homeRightBtn1">
+            <img src="assets/icons/leftBtn.png" alt="">
+        </button> -->
+    </section>
+
+    <section id="homeSection">
+        <div class="title" id="domestic">
+            <h2>Domestic Services</h2>
+        </div>
+        <button class="homeLeftBtn homeLeftBtn2">
+            <img src="assets/icons/leftBtn.png" alt="">
+        </button>
+        <div class="homeContainer homeContainer2" >
+            <div class="homeSlider-width" id="product_list">
+                <a href="domestic/ac_request" class="homeCatSimiler mainProduct cat1">
+                    <h3>A.C Repair</h3>
+                </a>
+                <a href="/domestic/carpenter" class="homeCatSimiler mainProduct cat2">
+                    <h3>Carpenter</h3>
+                </a>
+                <a href="/domestic/electrican" class="homeCatSimiler mainProduct cat3">
+                    <h3>Electricians </h3>
+                </a>
+                <a href="/domestic/fridge" class="homeCatSimiler mainProduct cat4">
+                    <h3>Fridge Repair</h3>
+                </a>
+                <a href="/domestic/gas_stove" class="homeCatSimiler cat5">
+                    <h3>Gas Stove Repair</h3>
+                </a>
+                <a href="/domestic/laundary" class="homeCatSimiler cat6">
+                    <h3>Laundary</h3>
+                </a>
+                <a href="/domestic/packet_mover" class="homeCatSimiler cat6">
+                    <h3>Packet Mover</h3>
+                </a>
+                <a href="/domestic/painter" class="homeCatSimiler cat7">
+                    <h3>Painter</h3>
+                </a>
+                <a href="/domestic/plumber" class="homeCatSimiler cat8">
+                    <h3>Plumber</h3>
+                </a>
+                <a href="/domestic/washing_machine" class="homeCatSimiler cat9">
+                    <h3>Washing Machine Repair</h3>
+                </a>
+                <a href="/domestic/const_worker" class="homeCatSimiler cat10">
+                    <h3>Construcation Worker</h3>
+                </a>
+                <!-- <div class="homeCatSimiler cat11">
+                    <h3>Hello, Brother</h3>
+                </div> -->
+            </div>
+        </div>
+        <button class="homeRightBtn homeRightBtn2">
+            <img src="assets/icons/leftBtn.png" alt="">
+        </button>
+    </section>
+
+    <section id="homeSection">
+        <div class="title" id="education">
+            <h2>Teaching & Training </h2>
+        </div>
+        <!-- <button class="homeLeftBtn homeLeftBtn3">
+            <img src="assets/icons/leftBtn.png" alt="">
+        </button> -->
+        <div class="homeContainer homeContainer3">
+            <div class="homeSlider-width">
+                <a href="#" class="homeCatSimiler cat1">
+                    <h3>Language Training </h3>
+                </a>
+                <a href="#" class="homeCatSimiler cat2">
+                    <h3>Compatative Exam</h3>
+                </a>
+                <a href="#" class="homeCatSimiler cat3">
+                    <h3>Dance Teacher</h3>
+                </a>
+                <a href="#" class="homeCatSimiler cat4">
+                    <h3>Home Tuition</h3>
+                </a>
+                <a href="#" class="homeCatSimiler cat5">
+                    <h3>Hello, Brother</h3>
+                </a>
+                <!-- <div class="homeCatSimiler cat6">6</div> -->
+            </div>
+        </div>
+        <!-- <button class="homeRightBtn homeRightBtn3">
+            <img src="assets/icons/leftBtn.png" alt="">
+        </button> -->
+    </section>
+
+    <section id="homeSection">
+        <div class="title" id="professional">
+            <h2>Professional Services</h2>
+        </div>
+        <button class="homeLeftBtn homeLeftBtn3">
+            <img src="assets/icons/leftBtn.png" alt="">
+        </button>
+        <div class="homeContainer homeContainer4">
+            <div class="homeSlider-width">
+                <a href="/professional/app_dev" class="homeCatSimiler cat1">
+                    <h3>App Development </h3>
+                </a>
+                <a href="/professional/web_dev" class="homeCatSimiler cat2">
+                    <h3>Web Development </h3>
+                </a>
+                <a href="/professional/soft_dev" class="homeCatSimiler cat3">
+                    <h3>Softeare Development</h3>
+                </a>
+                <a href="/professional/photographer" class="homeCatSimiler cat4">
+                    <h3>Photographer</h3>
+                </a>
+                <a href="/professional/graphic_designer" class="homeCatSimiler cat5">
+                    <h3>Graphic Designer</h3>
+                </a>
+                <a href="/professional/dj_request" class="homeCatSimiler cat6">
+                    <h3>D.J Request</h3>
+                </a>
+            </div>
+            </a>
+        </div>
+        <button class="homeRightBtn homeRightBtn3">
+            <img src="assets/icons/leftBtn.png" alt="">
+        </button>
+    </section> 
+
+    <section id="homeSection">
+        <div class="title" id="health">
+            <h2>Health & Fitness</h2>
+        </div>
+        <!-- <button class="homeLeftBtn homeLeftBtn3">
+            <img src="assets/icons/leftBtn.png" alt="">
+        </button> -->
+        <div class="homeContainer homeContainer5">
+            <div class="homeSlider-width">
+                <a href="/health/doctor" class="homeCatSimiler cat1">
+                    <h3>Presonal Doctor</h3>
+                </a>
+                <div class="homeCatSimiler cat2">
+                    <h3>Yoga Instructor</h3>
+                </div>
+                <div class="homeCatSimiler cat3">
+                    <h3>Physiotherphy</h3>
+                </div>
+                <div class="homeCatSimiler cat4">
+                    <h3>Dentist</h3>
+                </div>
+                <!-- <div class="homeCatSimiler cat5">5</div>
+            <div class="homeCatSimiler cat6">6</div> -->
+            </div>
+        </div>
+        <!-- <button class="homeRightBtn homeRightBtn3">
+            <img src="assets/icons/leftBtn.png" alt="">
+        </button> -->
+    </section>
+
+    <section id="homeSection">
+        <div class="title" id="properties">
+            <h2>Properties & Rental </h2>
+        </div>
+        <!-- <button class="homeLeftBtn homeLeftBtn3">
+            <img src="assets/icons/leftBtn.png" alt="">
+        </button> -->
+        <div class="homeContainer homeContainer6">
+            <div class="homeSlider-width">
+                <a href="#" class="homeCatSimiler cat1">
+                    <h3>Properties Buy & Sell</h3>
+                </a>
+                <a href="#" class="homeCatSimiler cat2">
+                    <h3>Store</h3>
+                </a>
+                <a href="#" class="homeCatSimiler cat3">
+                    <h3>For Student Rent</h3>
+                </a>
+                <a href="#" class="homeCatSimiler cat4">
+                    <h3>For Family Rent</h3>
+                </a>
+                <!-- <div class="homeCatSimiler cat5">5</div>
+            <div class="homeCatSimiler cat6">6</div> -->
+            </div>
+        </div>  
+        <!-- <button class="homeRightBtn homeRightBtn3">
+            <img src="assets/icons/leftBtn.png" alt="">
+        </button> -->
+    </section>
+    <section id="aboutUs">
+        <div class="aboutContainer about1">
+            <div class="imgView"><img src="assets/images/edweek-our-people-removebg-preview.png" alt=""></div>
+            <div class="textView">
+                <h1>Our Peoples are well trained & experianced.</h1>
+                <p>They are hired by passing our test processes. In which skills was fully visible, and trained by
+                    company to provide our customers best service.</p>
+            </div>
+        </div>
+        <div class="aboutContainer about2">
+            <div class="textView">
+                <h1>We provide assurity to trust on us.</h1>
+                <p>We are well awared about the customer's security, and give them free of fraud services. By checking
+                    their past records.</p>
+            </div>
+            <div class="imgView"><img src="assets/images/trust-removebg-preview.png" alt=""></div>
+        </div>
+        <div class="aboutContainer about3">
+            <div class="imgView"><img src="assets/images/Time-removebg-preview.png" alt=""></div>
+            <div class="textView">
+                <h1>Always try to give our best & hustle free experieance.</h1>
+                <p>Our customer's satifaction is our first preority. We assure that customer get their service on time,
+                    no misbeheves by our empoloyees & don't charge you more than the actual price. </p>
+            </div>
+        </div>
+    </section>
+
+    {{>footer}}
+
+
+  
+
+    <script src="js/searchbar.js"></script>
+    <script src="js/location.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/Responsive_Slider.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 150%;
+}
+
+.title{
+    /* border: 2px red solid; */
+    height: 100px;
+    margin: 5px 0;
+}
+/* .title h1{
+    text-align: center;
+    font-weight: bold;
+    padding: 25px;
+
+} */
+
+.company_details{
+    /* border: 2px solid green; */
+    height: 300px;
+
+}
+.company_details h1{
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    /* font-size: 1.6rem; */
+}
+.company_details p{
+    margin: 15px 145px;
+    font-size: larger;
+    text-align: justify;
+    line-height: 160%;
+
+}
+
+.customer_details{
+    /* border: 2px black solid; */
+    height: 100px;
+    margin: 20px 5px;
+}
+
+.working_process{
+    /* border: 2px violet solid; */
+    height: 200px;
+    margin: 10px 0;
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
+.working_process h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6 rem;
+    padding: 15px 0;
+
+}
+.working_process p{
+    font-size: larger;
+    margin: 5px 135px;
+    line-height: 160%;
+    text-align: justify;
+
+}
+
+.leadership_team{
+    /* border: 2px green solid; */
+    height: 790px;
+    margin: 30px 0;
+    position: relative;
+}
+.leadership_team h2{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 15px 0;
+    
+
+}
+.all_teams{
+    /* border: 2px red solid; */
+    height: 90%;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center;
+}
+.all_teams .main_team{
+    /* border: 2px black solid; */
+    height: 100%;
+    width: 30%;
+    margin: 0px 10px;
+    background-color: aliceblue;
+}
+ .all_teams .main_team .team_image{
+    /* border: 2px black solid; */
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+    margin: auto;
+    margin-top: 40px;
+ }
+ .all_teams .main_team .team_image:nth-child(1){
+    background: url(../assets/33376.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    /* width: 100%; */
+ }
+ .all_teams .main_team .team_image:nth-child(2){
+    background: url(/36248.jpg);
+    background-size: cover;
+ }
+ .all_teams .main_team .team_image:nth-child(3){
+    background: url(/ri1z_glyv_210908.jpg);
+    background-size: cover;
+ }
+
+ .all_teams .main_team h3 {
+    text-align: center;
+    font-weight: 600;
+    padding: 7px;
+
+
+ }
+ .all_teams .main_team h5{
+    text-align: center;
+    font-weight: 500;
+    font-size: large;
+
+ }
+ .all_teams .main_team .social_logo {
+    display: flex;
+    margin: 30px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .all_teams .main_team .social_logo a{
+    margin: 0 10px;
+ }
+ .all_teams .main_team .social_logo a i{
+    font-size: 25px;
+ }
+
+ .all_teams .main_team p{
+    margin: 30px 35px;
+    text-align: justify;
+    font-size: larger;
+    line-height: 150%;
+ }
+
+
+
+
+.investor{
+    /* border: red solid 2px; */
+    height: 400px;  
+    position: relative; 
+}
+.investor h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 10px;
+}
+.investor .investor_section{
+    /* border: 2px green solid; */
+    height: 87%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.investor .investor_section .items{
+    border: 1px solid black;
+    height: 180px;
+    width: 400px;
+    border-radius: 10px;
+    margin: 20px 25px;
+    box-shadow: 10px 10px 8px;
+}
+.investor .investor_section .items:nth-child(2){
+    background: url(../assets/dseu\ logo.webp);
+    background-position: center;
+    background-size: cover;
+}

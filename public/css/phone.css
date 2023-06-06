@@ -1,0 +1,295 @@
+/* ----------This is for Phone View Css styling---------- */
+
+@media(max-width:992px) {
+
+    /* Navbar */
+    .links ul {
+        display: none;
+    }
+
+    /* Side Bar Image Slider */
+    #introView {
+        height: 300px;
+    }
+
+    #introView .side_scrolling_container {
+        display: none;
+    }
+
+    #searchInput .location {
+        display: none;
+    }
+
+    #introView h1 {
+        font-size: 2rem;
+    }
+
+    #searchInput {
+        /* border: 2px solid red; */
+        margin: 0px 14px;
+        margin-top: 40px;
+        width: 92%;
+
+    }
+
+    #searchInput input {
+        width: 100%;
+    }
+
+    .intro button {
+        /* background-color: white; */
+        width: 20%;
+    }
+
+    .intro .services {
+        /* border: 2px solid purple; */
+        font-size: 0.9rem;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .intro .services span {
+        margin-top: 5px;
+    }
+
+
+    /* ----------Status---------- */
+
+    #statusSection {
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .no_of_status {
+        /* flex-direction: column; */
+        /* border: 2px solid blue; */
+        width: 130px;
+        flex-wrap: wrap;
+    }
+
+    .no_of_status div {
+        /* border: 2px solid red; */
+        height: 22px;
+        justify-content: left;
+    }
+
+    .no_of_status div h2 {
+        font-size: 1rem;
+    }
+
+    .status1 h1 {
+        font-size: 4rem;
+        font-weight: 200;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin: 0 8px;
+        color: rgb(68, 66, 66);
+    }
+
+    /* ----------categorySection---------- */
+
+    #leftBtn,
+    #rightBtn {
+        display: none;
+    }
+
+    /* ----------tempalateBikeSection---------- */
+
+    #tempalateBikeSection {
+        width: 114%;
+        margin-left: -25px;
+        height: 200px;
+    }
+
+    .detailText h1 {
+        font-size: 1.15rem;
+        line-height: 24px;
+        /* border: 2px solid; */
+        width: 105%;
+    }
+
+    .viewImage img {
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    .legalInfo {
+        /* border: 2px solid red; */
+        width: 100%;
+        /* bottom: 0; */
+        left: 0;
+        justify-content: center;
+    }
+
+    .trusted {
+        /* width: 15%; */
+        /* border: 2px solid blue; */
+        padding: 0;
+    }
+
+    .trusted:nth-child(3) {
+        width: 28%;
+    }
+
+    .trusted h2 {
+        font-size: 0.9rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .material-symbols-outlined {
+        font-size: 16px;
+    }
+
+
+
+    /* ----------Home Section Right Left Btn---------- */
+
+    #homeSection {
+        height: 280px;
+        /* border: 2px solid red; */
+    }
+
+    .homeRightBtn {
+        display: none;
+    }
+
+    #homeSection .title {
+        left: 10px;
+        top: -20px;
+        font-size: 12px;
+    }
+
+    .homeCatSimiler {
+        margin-top: 20px;
+    }
+
+
+    /* ----------aboutUs Section---------- */
+
+    :-webkit-any(article, aside, nav, section) h1 {
+        font-size: 80%;
+        /* border: 2px solid red; */
+    }
+
+    #aboutUs {
+        flex-direction: column;
+        height: 650px;
+    }
+
+    .imgView img {
+        width: 80%;
+    }
+
+    #aboutUs .textView p {
+        font-size: 0.8rem;
+    }
+
+    .aboutContainer {
+        /* flex-direction: column; */
+        /* border: 2px solid blue; */
+        height: 300px;
+    }
+
+    /* ----------footer Section---------- */
+
+    .subdetailbody {
+        margin-left: -20px;
+    }
+
+    .subdetailfooter {
+        /* border: 2px solid red; */
+        flex-wrap: wrap;
+        margin-left: -10px;
+    }
+
+    .subdetailfooter a {
+        /* border: 1px solid blue; */
+        font-size: 0.8rem;
+    }
+
+    .footerContainer .links {
+        width: 0;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        width: 75vw;
+    }
+
+    .footerLogo span {
+        display: none;
+    }
+
+    .company_location {
+        display: none;
+    }
+
+    .links ul {
+        flex-direction: column;
+        /* border: 2px solid red; */
+        border-radius: 10px;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        background-color: white;
+        z-index: 12;
+        box-shadow: 0 0 15px 0 rgb(199, 199, 199);
+        display: none;
+    }
+
+    .links{
+        display: none;
+    }
+    .smallShow {
+        display: none;
+    }
+
+    .bigShow {
+        display: flex;
+    }
+
+    .toggle ul{
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        position: absolute;
+        top: 70px;
+        height: 0;
+        width: 0;
+        right: 10px;
+        background-color: white;
+        /* border: 2px solid red; */
+        overflow-x: hidden;
+        box-shadow: 0 0 15px 0 rgb(212, 212, 212);
+        transition: 0.2s;
+        padding-inline-start: 0px;
+        border-radius: 10px;
+      }
+
+      .toggle ul li{
+        /* border: 2px solid red; */
+        width: 100%;
+      }
+
+      .toggle ul li a{
+        margin: 5px 10px;
+      }
+    
+      .toggle:hover ul  {
+        width: 120px;
+        height: 200px;
+      }
+}
+
+@media(min-width:992px) {
+    .bigShow {
+        display: none;
+    }
+
+    .toggle{
+        display: none;
+    }
+}

@@ -1,0 +1,56 @@
+.formSection{
+    /* border: 2px solid red; */
+    margin: auto;
+    height: 100%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin-top: 10px;
+    box-shadow: 0 0 15px 0 rgb(216, 215, 215);
+    border-radius: 10px;
+}
+p{
+    margin-top: -10px;
+}
+form{
+    /* margin: auto; */
+    position: relative;
+    
+}
+form input{
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    background-color: rgb(208, 205, 205);
+    font-size: 14px;
+}
+form .term_condition{
+    /* border: 2px red solid; */
+    height: 30px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+input[type="checkbox"], select{
+    border: 2px green solid;
+    background-color: rebeccapurple;
+    margin-left: -160px;
+    
+}
+label{
+    margin-left: -155px;
+}
+button{
+    border: 2px solid blue;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}

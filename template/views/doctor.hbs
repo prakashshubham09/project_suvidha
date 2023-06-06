@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental </title>
+
+    {{!-- <link rel="stylesheet" href="./css/car_Rental.css"> --}}
+    {{!-- <link rel="stylesheet" href="./css/car_Rental_phone.css"> --}}
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/form phone.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+        <style>
+          .form-title h1{
+                color: white;
+            }
+        .backImageDiv{
+            background: url("../health/images/personal\ doctor.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            filter: brightness(35%);
+            z-index: -55;
+           }
+        </style>
+
+
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="backImageDiv">
+    </div>
+
+    <div class="main_box">
+        <!-- <section id="form_details"> -->
+        <div class="form_details">
+            <div class="form-title">
+                <i class="fa-solid fa-circle fa-beat"></i>
+                <h1>Request for the Personal Doctor</h1>
+            </div>
+
+            <div class="form-section">
+                <input type="radio" name="detailSelection" id="p1" checked>
+                <label for="p1" id="persional-detail" class="form-btn"> Persional Details </label>
+
+                <input type="radio" name="detailSelection" id="a1">
+                <label for="a1" id="address-detail" class="form-btn"> Contact Details </label>
+                <!-- 
+                <input type="radio" name="detailSelection" id="c1">
+                <label for="c1" id="contact-detail" class="form-btn"> Contact Details </label> -->
+
+            </div>
+            <form id="persional-form" action="/doctor" method="post">
+                <div class="details-slider">
+                    <div class="form-input">
+                        <div>
+                            <!-- <label for="name">Name:</label> -->
+                            <input type="text" id="name" name="first_name" required placeholder="First Name *">
+                        </div>
+                        <div>
+                            <!-- <label for="email">Email:</label> -->
+                            <input type="text" id="lname" name="last_name" required placeholder="Last Name">
+                        </div>
+                        <div>
+                            <!-- <label for="email">Email:</label> -->
+                            <input type="text" id="phone" name="phone_no" required placeholder="Phone Number *">
+                        </div>
+                        <div>
+                            <!-- <label for="email">Email:</label> -->
+                            <input type="email" id="email" name="email" required placeholder="Email ID">
+                        </div>
+
+                        <div>
+                            <!-- <label for="hiring">Purpose of hiring</label> -->
+                            <select id="hiring" required name="hiring" >
+                                <option selected>What Purpose *</option>
+                                <option > For Local Trip</option>
+                                <option >Personal Driver</option>
+                                <option >For Events</option>
+                                <option >For Outstation Trip</option>
+                                <option >Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <!-- <label for="have">Which type of you have car required ? </label> -->
+                            {{!-- <select id="have" name="vehicle">
+                                <option selected>Choose Vehicle</option>
+                                <option value="SUV"> SUV</option>
+                                <option value="SEDAN">SEDAN</option>
+                                <option value="HATCHBACK">HATCHBACK</option>
+                                <option value="Other">Other</option>
+                            </select> --}}
+                        </div>
+
+                        <div>
+                            <!-- <label for="desp_trip">Description About Their Trip </label> -->
+                            <textarea id="desp_trip" name="description" required placeholder="Description"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-input">
+                        <div>
+                            <!-- <label for="name">Name:</label> -->
+                            <input type="text" id="house" name="house_no" required placeholder="House No. & Building Name *" >
+                        </div>
+                        <div>
+                            <!-- <label for="email">Email:</label> -->
+                            <input type="text" id="lname" name="road_area" required placeholder="Road Name, Area, Colony *" >
+                        </div>
+                        <div>
+                            <!-- <label for="email">Email:</label> -->
+                            <input type="text" id="phone" name="landmark" required placeholder="Landmark">
+                        </div>
+
+                        <div>
+                            <!-- <label for="hiring">Purpose of hiring</label> -->
+                            <select id="city" required name="city" >
+                                <option selected>City *</option>
+                                <option > Patna </option>
+                                <option >New Delhi</option>
+                                <!-- <option value="For Events">For Events</option>
+                                <option value="For Outstation Trip">For Outstation Trip</option>
+                                <option value="Other">Other</option> -->
+                            </select>
+                        </div>
+                        <div>
+                            <!-- <label for="have">Which type of you have car required ? </label> -->
+                            <select id="state" required name="state" >
+                                <option selected>State *</option>
+                                <option > Bihar </option>
+                                <option > Delhi </option>
+                                <option > Utter Pardesh </option>
+                                <!-- <option value="Other">Other</option> -->
+                            </select>
+                        </div>
+
+                        <div>
+                            <!-- <label for="email">Email:</label> -->
+                            <input type="text" id="phone" name="pincode" required placeholder="pincode *" >
+                        </div>
+
+                        <div>
+                            <!-- <label for="desp_trip">Description About Their Trip </label> -->
+                            <!-- <textarea id="desp_trip" name="desp_trip" placeholder="Description"></textarea> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="formBtn">
+                    <input type="reset" value="Clean">
+                    <input type="submit" value="Submit" id="submit">
+                    <div id="next-slider" >Next</div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </section>
+    <section id="feedback">
+        <div class="feedback">
+            <div class="similarItems cat1"></div>
+            <div class="similarItems cat2"></div>
+            <div class="similarItems cat3"></div>
+            <div class="similarItems cat4"></div>
+            <div class="similarItems cat5"></div>
+            <div class="similarItems cat6"></div>
+            <div class="similarItems cat7"></div>
+            <div class="similarItems cat8"></div>
+            <div class="similarItems cat9"></div>
+        </div>
+    </section>
+
+    {{>footer}}
+
+    <script src="../js/feedback.js"></script>
+    <script src="../js/car_Rental.js"></script>
+
+</body>
+
+</html>
